@@ -1,0 +1,3 @@
+- [x] Dựng trang chủ Matrix Software theo 7 khối đã yêu cầu.
+- [x] Thêm công cụ ước tính chi phí tương tác và form liên hệ có kiểm tra dữ liệu.
+- [x] Kiểm tra alias, import và hiển thị trên máy tính/điện thoại.
