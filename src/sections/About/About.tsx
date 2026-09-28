@@ -1,0 +1,5 @@
+import { ArrowDownRight, ArrowUpRight, Check, X } from "lucide-react";
+import { SectionHeading } from "@/components/common/SectionHeading";
+import { site } from "@/data/site";
+
+export const About = () => <section id="ve-chung-toi" className="section-pad about-section"><div className="container-wide"><SectionHeading {...site.intro} /><div className="comparison"><div className="comparison-col comparison-problem"><div className="comparison-title"><ArrowDownRight size={24} /><span>{site.intro.problemLabel}</span></div><ul>{site.intro.problems.map(item => <li key={item}><X size={18} aria-hidden="true" />{item}</li>)}</ul></div><div className="comparison-col comparison-solution"><div className="comparison-title"><ArrowUpRight size={24} /><span>{site.intro.solutionLabel}</span></div><ul>{site.intro.solutions.map(item => <li key={item}><Check size={18} aria-hidden="true" />{item}</li>)}</ul></div></div><div className="about-bottom"><span className="about-asterisk" aria-hidden="true">✳</span><h3>{site.intro.whyTitle}</h3><p>{site.intro.whyDescription}</p></div></div></section>;

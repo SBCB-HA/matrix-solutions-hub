@@ -1,0 +1,6 @@
+import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { site } from "@/data/site";
+import heroImage from "@/assets/matrix-team.jpg";
+
+export const Hero = () => <section className="hero" id="top" aria-labelledby="hero-title"><img className="hero-image" src={heroImage} alt={site.hero.imageAlt} width={1600} height={900} fetchPriority="high" /><div className="hero-shade" /><div className="container-wide hero-content"><div className="hero-copy"><p className="hero-eyebrow"><span className="status-dot" />{site.hero.eyebrow}</p><h1 id="hero-title">{site.hero.titleTop}<br /><em>{site.hero.titleBottom}</em></h1><p className="hero-description">{site.hero.description}</p><div className="hero-actions"><Button asChild size="lg"><a href="#lien-he">{site.hero.primary}<ArrowUpRight /></a></Button><Button asChild variant="heroOutline" size="lg"><a href="#giai-phap">{site.hero.secondary}</a></Button></div></div><a href="#ve-chung-toi" className="hero-scroll"><ArrowDown size={16} /><span>{site.hero.scroll}</span></a></div></section>;
