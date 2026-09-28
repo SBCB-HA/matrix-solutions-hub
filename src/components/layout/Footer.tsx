@@ -1,0 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
+import { site } from "@/data/site";
+
+export const Footer = () => <footer className="footer"><div className="container-wide"><div className="footer-main"><div className="footer-brand"><a href="#top" className="brand" aria-label="Matrix Software - về đầu trang"><span className="brand-mark" aria-hidden="true"><span /><span /><span /><span /></span><span>MATRIX<span className="brand-sub"> SOFTWARE</span></span></a><p>{site.footer.tagline}</p></div><div className="footer-links"><span>{site.footer.linksTitle}</span>{site.nav.map(item => <a key={item.href} href={item.href}>{item.label}</a>)}</div><div className="footer-contact"><span>{site.footer.contactTitle}</span><p>{site.footer.contactNote}</p><a href="#lien-he">{site.contactLabel}<ArrowUpRight size={18} /></a></div></div><div className="footer-bottom"><span>{site.footer.copyright}</span><a href="#top">{site.footer.backTop} ↑</a></div></div></footer>;
